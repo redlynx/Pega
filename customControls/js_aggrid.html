@@ -1,0 +1,43 @@
+<pega:onlyonce name="js_aggrid">
+<pega:static type="script" app="webwb">
+   <pega:file name="aggrid_community.js"/>
+</pega:static>
+</pega:onlyonce> 
+
+<%
+  // make sure we have a unique identifier for our div
+  com.pega.pegarules.priv.context.PegaRequestor requestor = 
+    (com.pega.pegarules.priv.context.PegaRequestor) tools.getRequestor(); 
+  String guid = "agGrid" +
+     Long.toString(requestor.currentTimeUnique());
+%>
+
+<div id="myGrid" style="height: 500px; width: 80%" class="ag-theme-alpine"></div>
+
+<script>  
+console.log("setting options");
+var columnDefs = [
+  {headerName: "Make", field: "make"},
+  {headerName: "Model", field: "model"},
+  {headerName: "Price", field: "price"}
+];
+    
+var rowData = [
+  {make: "Toyota", model: "Celica", price: 35000},
+  {make: "Ford", model: "Mondeo", price: 32000},
+  {make: "Renault", model: "Clio", price: 12000},
+  {make: "Porsche", model: "Boxter", price: 72000}
+];
+
+var gridOptions = {
+  columnDefs: columnDefs,
+  rowData: rowData
+};
+
+/* single line comment, Pega style */
+$(function() {
+  console.log("rendering");
+  var gridDiv = document.querySelector("#myGrid");
+  new agGrid.Grid(gridDiv, gridOptions);  
+});  
+</script>
