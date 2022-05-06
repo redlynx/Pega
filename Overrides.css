@@ -1,0 +1,201 @@
+.flex.home-header-main>.flex.content-item.flex-row.item-1 {
+  width:0px;
+  flex-basis:0px;
+}
+
+.pi-available{
+  color:#34c759;
+}
+
+.pi-unavailable{
+  color:#ffcc00;
+}
+
+.home-header-main>div.item-1 {
+    border: none !important;
+}
+
+.workarea-main .workarea-main-left.ui-resizable.collapsed, .workarea-main .workarea-main-right.ui-resizable.collapsed {
+    width: 0px !important;
+}
+
+
+/********************* generic styles ***********************/
+
+.systemPurple{
+  color: rgb(175,82,222);
+}
+
+.systemGray6{
+  color: rgb(28,28,30);
+}
+
+.text-large{
+  font-size: large;
+}
+
+.text-small{ 
+  font-size: small;
+}
+
+/********************* NBA and offer buttons ***********************/
+/* wish there was a better way, nothing in skins and final rules */
+.pi-darkblue-bg{
+  background:#404041 !important;
+}
+
+.pi-nba-green-bg{
+  background:#404041 !important;
+}
+
+
+/********************* timer styling in interaction portal ***********************/
+/* removed complex styling and coloring to be less distracting */
+
+.cs_timer_control{
+  margin-left: 5px !important;
+}
+
+#myTimer{
+  color: #404041 !important;  
+}
+
+.cs_timer_on_goal{
+  background-color: #E7E9EB !important;
+}
+
+.cs_timer_control.cs_timer_on_goal>.item-3.flex.content-item{
+  background-color: #E7E9EB !important;
+}
+
+.cs_timer_control.cs_timer_on_deadline{
+  background-color: #E7E9EB !important;
+}
+
+.cs_timer_control.cs_timer_deadline_exceed{
+  background-color: #E7E9EB !important;
+}
+
+#cs-timer-circle{
+  stroke: rgb(209,209,214);
+}
+
+#cs-timer-total{
+  stroke: #404041;  
+}
+
+#cs-timer-phone{
+  fill: #404041 !important;  
+}
+
+/********************* floating knowledge management button ***********************/
+
+.km-floating-button{
+  position: fixed;
+  width: 32px !important;
+  height: 65px;
+  background: #404041;
+  z-index: 999;
+  top: calc(50vh - 20px);
+  right: 0;
+  cursor: pointer !important;
+  text-align: center;
+  padding: 16px 8px 16px 11px;
+  font-size: 20px;
+  justify-content: center;
+  border-radius: 70px 0 0 70px;
+}
+
+
+/********************* search in interaction portal ***********************/
+
+div[node_name="CPMSearchInHeader"]{
+  border-bottom: 1px solid rgb(199, 199, 199);  
+}
+
+div[node_name="CPMSearchInHeader"] .flex.content-inline_middle.cpm_advanced_search_wrapper > .flex.content-item.item-1{
+  background: transparent;
+  padding-left: 5px;
+}
+
+div[node_name="CPMSearchInHeader"] .flex.content-inline_middle.cpm_advanced_search_wrapper > .flex.content-item.item-2{
+  background: transparent;
+}
+
+div[node_name="CPMSearchInHeader"] .flex.content-inline_middle.cpm_advanced_search_wrapper > .flex.content-item.item-3{
+  background: transparent;
+}
+
+div[node_name="CPMSearchInHeader"] button.Icon.pzbutton:not([disabled]):hover, 
+div[node_name="CPMSearchInHeader"] .Icon button.buttonTdButton:not([disabled]):hover, 
+div[node_name="CPMSearchInHeader"] button.Icon:not([disabled]):hover {
+  height: 23px;
+  width: 23px;
+  background-color: transparent;
+}
+
+div[node_name="CPMSearchInHeader"] .cpm_advanced_search_wrapper input {
+  height: 25px;
+  min-height: 25px;
+  background: transparent;
+  color:#FFF;
+
+  padding-left: 10px;
+}
+
+div[node_name="CPMSearchInHeader"] .cpm_advanced_search_wrapper input:focus{
+  outline:0;
+}
+
+.global-search input::-webkit-input-placeholder,
+.global-search input::placeholder {
+  color:#fff;
+}
+
+
+div[node_name="CPMSearchInHeader"] .cpm_advanced_search_wrapper select{
+  width: auto;
+  height: 25px;
+  background: transparent;
+  line-height: 25px;
+  min-height: 25px;
+  color:#FFF;
+}
+
+div[node_name="CPMSearchInHeader"] .cpm_advanced_search_wrapper .pi {
+  font-size:13px;
+  color:#FFF;
+}
+
+div[node_name="CaseSearchText"] .gray_backgroundExpanded INPUT[type="text"],
+div[node_name="CaseSearchTextForAccount"] .gray_backgroundExpanded INPUT[type="text"]{
+  background-color: #F0F0F0 !important;
+}
+
+/********************* interaction menu icons right override ***********************/
+
+.cs-icon-status {
+  background: rgb(28,28,30);
+  border: 1px solid rgb(199, 199, 199);
+  color: #FFF;
+}
+
+
+a.Standard_task{
+  color: #fff !important;
+  background-color: rgb(64,64,65) !important;
+}
+
+a.Standard_task::after{
+  border-left-color: rgb(64,64,65) !important;
+}
+
+
+/********************* interaction menu icons right override ***********************/
+.pi-green{
+  color:white;
+}
+
+.pi-red{
+  color:white;
+}
